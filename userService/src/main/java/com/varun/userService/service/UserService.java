@@ -30,4 +30,9 @@ public class UserService {
         }
         return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
     }
+
+    public UserDto create(UserDto userDto) {
+        User user = userRepository.save(UserMapper.INSTANCE.mapUserDtoToUser(userDto));
+        return UserMapper.INSTANCE.mapUserToUserDto(user);
+    }
 }
