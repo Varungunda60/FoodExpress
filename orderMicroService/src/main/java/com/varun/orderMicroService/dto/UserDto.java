@@ -1,2 +1,17 @@
-package com.varun.orderMicroService.dto;public class UserDto {
+package com.varun.ordermicroservice.Dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class UserDto {
+    private Long id;
+    private String firstName;
+    private String lastName;
+    private String userName;
+    private String Password;
+
 }

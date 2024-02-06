@@ -1,4 +1,4 @@
-package com.varun.orderMicroService.dto;
+package com.varun.ordermicroservice.Dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class RestaurantDto {
+public class Restaurant {
     private int id;
     private String name;
     private String address;

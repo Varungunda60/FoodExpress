@@ -1,15 +1,16 @@
-package com.varun.orderMicroService.dto;
+package com.varun.ordermicroservice.Dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class OrderDto {
-    private List<FoodItemDto> foodItemDtoList;
+public class OrderDtoFromFrontEnd {
+    List<FoodItemsDto> foodItemsDtoList;
+    Restaurant restaurant;
     private Integer userId;
-    private RestaurantDto restaurantDto;
-
 }
